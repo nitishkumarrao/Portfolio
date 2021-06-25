@@ -50,9 +50,46 @@ sr.reveal('.skills__text',{});
 sr.reveal('.skills__data',{interval: 200}); 
 sr.reveal('.skills__img',{delay: 600});
 
+/*SCROLL Education*/
+sr.reveal('.timeline',{});
+sr.reveal('.event',{});
+sr.reveal('.edu__title',{interval: 200});
+sr.reveal('.edu__subtitle',{interval: 400});
+
+
+sr.reveal('.slideshow-container',{interval:200});
 /*SCROLL WORK*/
 sr.reveal('.work__img',{interval: 200}); 
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input',{interval: 200}); 
+
+/**************************** */
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+
+  if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < slides.length; i++) {
+      slides[i].className = slides[i].className.replace(" active", "");
+    }
+  slides[slideIndex-1].style.display = "block";
+
+}
 
