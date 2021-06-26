@@ -494,7 +494,7 @@ body{margin-top:20px;}
 }
 
 /* Next & previous buttons */
-.prev, .next {
+/*.prev, .next {
   cursor: pointer;
   position: absolute;
   top: 45%;
@@ -506,15 +506,15 @@ body{margin-top:20px;}
   font-size: 40px;
   border-radius: 0 3px 3px 0;
   user-select: none;
-}
+}*/
 
 /* Position the "next button" to the right */
-.next {
+/*next {
   position: absolute;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
+*/
 /* Add an italic font style to all quotes */
 q {font-style: italic;}
 
