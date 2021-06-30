@@ -1,3 +1,4 @@
+
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 /*===== VARIABLES CSS =====*/
@@ -477,7 +478,18 @@ body{margin-top:20px;}
 
 
 /***************************/
-
+.scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;;
+  font-size: 24px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+}
 
 
 /* Slideshow container */
@@ -529,6 +541,7 @@ q {font-style: italic;}
 
 /* ===== CONTACT =====*/
 #contact__input{
+  align-items: right;
   width: 100%;
   font-size: var(--normal-font-size);
   font-weight: var(--font-semi);
@@ -537,6 +550,40 @@ q {font-style: italic;}
   border: 1.5px solid var(--second-color);
   outline: none;
   margin-bottom: var(--mb-4);
+  
+}
+.contact .contact-content .column{
+  width: calc(50%-30px);
+}
+.contact .contact-content .text{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.contact .contact-content .left .icons{
+  margin: 10px;
+}
+.contact .contact-content .row{
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact-content .row .info{
+  margin-left: 30px;
+}
+.contact .contact-content .row .map{
+  margin-bottom: 100px;
+}
+.contact .contact-content .row i{
+  font-size: 25px;
+  color:var(--first-color)
+}
+.contact .contact-content .info .head{
+  font-weight: 25px;
+
+}
+.contact .contact-content .info .sub-title{
+  color:var(--second-color)
 }
 .contact__button{
   display: block;
@@ -545,15 +592,37 @@ q {font-style: italic;}
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+  
 }
+
+.left li {
+  position: absolute;
+  width: 15%;
+  height: 200px;
+  margin: 2.5%;
+  float: left;
+}
+.down{
+  position:absolute;
+  
+}
+.right {
+  position:absolute;
+  margin-left: 30%;
+  
+  right: 300px;
+  
+}
+
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
-  color: #fff;
+  background-color: #81cbf7d7;
+  color: rgb(0, 0, 0);
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  
 }
 .footer__title{
   font-size: 2rem;
@@ -564,9 +633,10 @@ q {font-style: italic;}
 }
 .footer__icon{
   font-size: 1.5rem;
-  color: #fff;
+  color: rgb(0, 0, 0);
   margin: 0 var(--mb-2)
 }
+
 
 /* ===== MEDIA QUERIES=====*/
 @media screen and (min-width: 768px){
@@ -639,12 +709,34 @@ q {font-style: italic;}
   }
   .contact__form{
     width: 360px;
+    height: auto;
+    margin: 0 auto -80px; /* footer height + space */
+    min-height: 100%;
+    padding: 0 0 80px; /* footer height + space */
+    box-sizing: border-box;
+    overflow: auto;
+    
   }
   .contact__container{
-    justify-items: center;
+    justify-items: auto;
   }
 }
+@media only screen and (max-width: 500px) {
+  .left{
+    width: 360px;
+    display: none;
+    
 
+  }
+  .right{
+    width: 400px;
+    position: relative;
+    left: -100px;
+
+    
+  }
+
+}
 @media screen and (min-width: 1024px){
   .bd-grid{
     margin-left: auto;

@@ -82,3 +82,20 @@ function showSlides() {
   x[slideIndex-1].style.display = "block";
   setTimeout(showSlides, 3000); // Change image every 2 seconds
 }
+
+/********SCroll UP */
+let nav = document.querySelector("nav");
+let scrollBtn = document.querySelector(".scroll-button a");
+console.log(scrollBtn);
+let val;
+window.onscroll = function() {
+  if(document.documentElement.scrollTop > 20){
+    nav.classList.add("sticky");
+    scrollBtn.style.display = "block";
+  }else{
+    nav.classList.remove("sticky");
+    scrollBtn.style.display = "none";
+  }
+
+}
+
