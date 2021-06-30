@@ -729,11 +729,13 @@ q {font-style: italic;}
 
   }
   .right{
-    width: 400px;
+    width: 290px;
     position: relative;
-    left: -100px;
-
-    
+    left: -85px;
+  }
+  .scroll-button{
+    width: 10%;
+    position: fixed;
   }
 
 }
