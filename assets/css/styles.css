@@ -723,7 +723,7 @@ q {font-style: italic;}
 }
 @media only screen and (max-width: 500px) {
   .left{
-    width: 360px;
+    width: 380px;
     display: none;
     
 
