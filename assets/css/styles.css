@@ -268,6 +268,10 @@ img{
   row-gap: 2rem;
   text-align: center;
 }
+.skills__container1{
+  column-gap: 2rem;
+  text-align: right;
+}
 .skills__subtitle{
   margin-bottom: var(--mb-2);
 }
@@ -315,6 +319,9 @@ img{
 .skills__node{
   width: 70%;
 }
+.skills__firebase{
+  width: 90%;
+}
 .skills__qt{
   width: 90%;
 }
@@ -325,13 +332,16 @@ img{
   width: 85%;
 }
 .skills__python{
-  width: 80%;
+  width: 90%;
 }
 .skills__flutter{
   width: 20%;
 }
 .skills__sql{
-  width: 50%;
+  width: 60%;
+}
+.skills__php{
+  width: 30%;
 }
 .skills__img{
   border-radius: .5rem;
@@ -743,11 +753,23 @@ q {font-style: italic;}
     bottom: 15%;
   }
 
-  .about__container, .skills__container{
+  .about__container, .skills__container {
     grid-template-columns: repeat(2,1fr);
     align-items: center;
     text-align: initial;
   }
+  .skills__container1 {
+    grid-template-columns: repeat(2,1fr);
+    align-items: right;
+    text-align: initial;
+    position:absolute;
+    margin-left: 30%;
+    top: 1530px;
+    
+    right: -400px;
+    
+  }
+ 
   .about__img img{
     width: 300px;
   }
